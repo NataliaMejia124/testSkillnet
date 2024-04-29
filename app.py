@@ -7,8 +7,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 from services.consumidores_service import obtener_consumidores, crear_consumidor, actualizar_consumidor, eliminar_consumidor
-from services.productos_service import obtener_productos, crear_producto
-from services.orden_service import obtener_ordenes, crear_orden
+from services.productos_service import obtener_productos, crear_producto, actualizar_producto, eliminar_producto
+from services.orden_service import obtener_ordenes, crear_orden, actualizar_orden, eliminar_orden
 
 
 ############################################## Rutas de consumidores
@@ -21,9 +21,9 @@ def get_consumidores():
 def create_cunsumidor():
     return crear_consumidor(request.json)
 
-@app.route('/consumidores', methods=['PUT'])
-def update_consumidor():
-    return actualizar_consumidor(request.json)
+@app.route('/consumidores/<int:id>', methods=['PUT'])
+def update_consumidor(id):
+    return actualizar_consumidor(id, request.json)
 
 
 @app.route('/consumidores/<int:id>', methods=['DELETE'])
@@ -41,14 +41,14 @@ def get_productos():
 def create_producto():
     return crear_producto(request.json)
 
-# @app.route('/producto', methods=['PUT'])
-# def update_():
-#     return actualizar_consumidor(request.json)
+@app.route('/producto/<int:id>', methods=['PUT'])
+def update_producto(id):
+    return actualizar_producto(id, request.json)
 
 
-# @app.route('/producto/<int:id>', methods=['DELETE'])
-# def delete_consumidor(id):
-#     return eliminar_consumidor(id)
+@app.route('/producto/<int:id>', methods=['DELETE'])
+def delete_producto(id):
+    return eliminar_producto(id)
 
 
 ############################################## Rutas de ordenes
@@ -60,6 +60,15 @@ def get_ordenes():
 @app.route('/orden', methods=['POST'])
 def create_orden():
     return crear_orden(request.json)
+
+@app.route('/orden/<int:id>', methods=['PUT'])
+def update_orden(id):
+    return actualizar_orden(id, request.json)
+
+
+@app.route('/orden/<int:id>', methods=['DELETE'])
+def delete_orden(id):
+    return eliminar_orden(id)
     
 
 

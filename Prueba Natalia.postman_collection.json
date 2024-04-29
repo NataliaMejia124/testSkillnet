@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "dcb3b3a3-71a9-4218-ac6e-913cdac2cce9",
+		"_postman_id": "0e49916f-10c3-40d8-9d29-80aefaacb262",
 		"name": "Prueba Natalia",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "19836907"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15722880"
 	},
 	"item": [
 		{
@@ -14,20 +14,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/consumidores",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"consumidores"
-							]
-						}
+						"url": "http://127.0.0.1:5000/consumidores"
 					},
 					"response": []
 				},
@@ -45,20 +32,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://127.0.0.1:5000/consumidores",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"consumidores"
-							]
-						}
+						"url": "http://127.0.0.1:5000/consumidores"
 					},
 					"response": []
 				},
@@ -76,20 +50,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://127.0.0.1:5000/consumidores",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"consumidores"
-							]
-						}
+						"url": "http://127.0.0.1:5000/consumidores"
 					},
 					"response": []
 				},
@@ -98,21 +59,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/consumidores/3",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"consumidores",
-								"3"
-							]
-						}
+						"url": "http://127.0.0.1:5000/consumidores/3"
 					},
 					"response": []
 				}
@@ -138,20 +85,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/orden",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"orden"
-							]
-						},
+						"url": "http://127.0.0.1:5000/orden",
 						"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
 					},
 					"response": []
@@ -185,20 +119,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://127.0.0.1:5000/orden",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"orden"
-							]
-						},
+						"url": "http://127.0.0.1:5000/orden",
 						"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
 					},
 					"response": []
@@ -321,20 +242,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": {
-							"raw": "http://127.0.0.1:5000/producto",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"producto"
-							]
-						},
+						"url": "http://127.0.0.1:5000/producto",
 						"description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
 					},
 					"response": []
@@ -368,20 +276,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "http://127.0.0.1:5000/producto",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "5000",
-							"path": [
-								"producto"
-							]
-						},
+						"url": "http://127.0.0.1:5000/producto",
 						"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
 					},
 					"response": []

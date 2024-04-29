@@ -11,8 +11,8 @@ def crear_consumidor(nuevo_consumidor):
     db.session.commit()
     return jsonify(nuevo_consumidor.serialize()), 201
 
-def actualizar_consumidor(new_data):
-    consumidor = Consumidor.query.get(new_data["id"])
+def actualizar_consumidor(id, new_data):
+    consumidor = Consumidor.query.get(id)
 
     if consumidor is None:
         return jsonify({'error': 'Consumidor no encontrado'}), 404
